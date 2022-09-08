@@ -28,5 +28,5 @@
     "title":"Funko Itachi",
     "price":1500,
     "image":"https://cdn.shopify.com/s/files/1/0362/6378/8588/products/compra_funko_pop_anime_naruto_shippuden_anbu_itachi_1027_889698581493_1200x.jpg?v=1654033463"
-  },
-  ]
+  }  
+]
