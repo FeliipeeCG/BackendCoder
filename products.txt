@@ -5,19 +5,28 @@
     "price":1200,
     "image":"https://tap-multimedia-1172.nyc3.digitaloceanspaces.com/productimage/38896/889698396981.jpg"
     },
-  {"id":3,
-  "title":"Funko Kurama",
-  "price":2000,
-  "image":"https://images.stockx.com/images/Funko-Pop-Anime-Naruto-Kurama-Super-Sized-Figure-73.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1649962850"},
-  {"id":4,"title":"Funko Luffy",
-  "price":1500,
-  "image":"https://cdn.shopify.com/s/files/1/0559/9513/8226/products/Luffytaro921-1_large.jpg?v=1636045263"},
-  {"id":11,
-  "title":"Funko Deku",
-  "price":2000,
-  "image":"https://cdn.shopify.com/s/files/1/0362/6378/8588/products/funko_pop_anime_my_hero_academia_infinite_deku_with_eri_1008_889698519335_pop_700x.jpg?v=1657665613"},
-  {"id":12,
-  "title":"Funko Itachi",
-  "price":1500,
-  "image":"https://cdn.shopify.com/s/files/1/0362/6378/8588/products/compra_funko_pop_anime_naruto_shippuden_anbu_itachi_1027_889698581493_1200x.jpg?v=1654033463"},
+  {
+    "id":3,
+    "title":"Funko Kurama",
+    "price":2000,
+    "image":"https://images.stockx.com/images/Funko-Pop-Anime-Naruto-Kurama-Super-Sized-Figure-73.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1649962850"
+  },
+  {
+    "id":4,
+    "title":"Funko Luffy",
+    "price":1500,
+    "image":"https://cdn.shopify.com/s/files/1/0559/9513/8226/products/Luffytaro921-1_large.jpg?v=1636045263"
+  },
+  {
+    "id":11,
+    "title":"Funko Deku",
+    "price":2000,
+    "image":"https://cdn.shopify.com/s/files/1/0362/6378/8588/products/funko_pop_anime_my_hero_academia_infinite_deku_with_eri_1008_889698519335_pop_700x.jpg?v=1657665613"
+  },
+  {
+    "id":12,
+    "title":"Funko Itachi",
+    "price":1500,
+    "image":"https://cdn.shopify.com/s/files/1/0362/6378/8588/products/compra_funko_pop_anime_naruto_shippuden_anbu_itachi_1027_889698581493_1200x.jpg?v=1654033463"
+  },
   ]
