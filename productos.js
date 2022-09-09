@@ -7,7 +7,7 @@ const constructor = new Producto("./productos.txt");
 let Products = [];
 //GET API PRODUCTOS
 router.get("/", (req, res) => {
-  res.send(constructor.getAll());
+  res.send(Products);
 });
 //GET API PRODUCTOS /:ID
 router.get("/:id", async (req, res) => {
