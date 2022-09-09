@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de BackEnd</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>INGRESE NUEVOS PRODUCTOS</h2>
+      <form action="/api/products" method="POST">
+        <label for="title">Nombre: </label>
+        <input type="text" name="name" placeholder="Nombre del producto" />
+        <br />
+        <label for="title">Precio: </label>
+        <input type="number" name="price" placeholder="Precio" />
+        <br />
+        <label for="title">Origen: </label>
+        <input type="text" name="name" placeholder="Origen del producto" />
+        <br />
+        <label for="title">Imagen: </label>
+        <input type="file" name="Imagen" placeholder="Imagen" />
+        <br />
+        <button>ENVIAR</button>
+        <br />
+      </form>
+    </div>
+  </body>
+</html>

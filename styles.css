@@ -1,0 +1,20 @@
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgb(0, 0, 0) 100%
+  );
+}
+h2 {
+  color: lightgray;
+}
+form {
+  background-color: rgba(0, 0, 0, 0.137);
+  color: rgb(252, 248, 248);
+}
+input {
+  color: rgb(0, 0, 0);
+  background-color: rgba(18, 148, 115, 0.575);
+}
