@@ -1,0 +1,16 @@
+block main
+    main
+        div
+            h1 Formulario en PUG
+            br
+            form(action="/api/products" method="post")          
+            div 
+            input(type="text" name="name" placeholder="Nombre del producto")           
+            br 
+            input(type="number" name="price" placeholder="Precio")
+            br 
+            input(type="text" name="name" placeholder="Origen del producto")
+            br 
+            input(type="file" name="Imagen" placeholder="Imagen")
+            br 
+            button(ENVIAR)

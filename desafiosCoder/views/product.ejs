@@ -1,0 +1,15 @@
+<main>
+  <% if (products) { %> <% products.forEach(i=>{ %>
+  <div class="card" style="width: 18rem; margin: 10px">
+    <div class="card-body">
+      <h5 class="card-title"><%=i.title%></h5>
+      <p class="card-text">$ <%=i.price%></p>
+      <a href="/api/products/<%=i.id%>" class="btn btn-primary">
+        Ver producto</a
+      >
+    </div>
+  </div>
+  <% }); %> <% } else { %>
+  <h1>NO HAY PRODUCTOS</h1>
+  <% } %>
+</main>
