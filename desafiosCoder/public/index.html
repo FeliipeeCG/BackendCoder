@@ -27,5 +27,25 @@
         <br />
       </form>
     </div>
+    <section class="section-products">
+      <h1>PRODUCTOS</h1>
+      <div id="output-products"></div>
+    </section>
+
+    <div id="chat-container">
+      <div id="chat-window">
+        <div id="output"></div>
+        <div id="actions"></div>
+      </div>
+      <input type="email" id="username" placeholder="user@email.com" required />
+      <input type="text" id="message" placeholder="Message" required />
+      <button id="send">Send</button>
+    </div>
+
+    <!-- ? SCRIPTS -->
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="formProducts.js"></script>
+    <script src="chat.js"></script>
   </body>
 </html>
