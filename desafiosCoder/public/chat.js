@@ -3,27 +3,35 @@ let username = document.getElementById("username");
 let btn = document.getElementById("send");
 let output = document.getElementById("output");
 let actions = document.getElementById("actions");
+
 btn.addEventListener("click", () => {
   socket.emit("chat:message", {
     username: username.value,
     message: message.value,
+    date: new Date().toLocaleString(),
   });
   message.value = " ";
   message.focus();
+  return false;
 });
+
 message.addEventListener("keypress", () => {
   socket.emit("chat:typing", username.value);
 });
-socket.on("chat:message", (data) => {
+
+socket.on("chat:history", (data) => {
   actions.innerHTML = " ";
-  output.innerHTML += `<p>
-    <strong class="message-user">${
-      data.username
-    } <span class="message-date">[ ${new Date().toLocaleString()} ]</span></strong>: <span class="message-txt">${
-    data.message
-  }</span>
-    </p>`;
+  output.innerHTML = data
+    .map(
+      (user) =>
+        `<p>
+  <strong class="message-user">${user.username} <span class="message-date">[ ${user.date} ]</span></strong>: <span class="message-txt">${user.message}</span>
+  </p>`
+    )
+    .join(" ");
+  return false;
 });
+
 socket.on("chat:typing", (data) => {
-  actions.innerHTML = `<p></em>${data} is typing a message </p>`;
+  actions.innerHTML = `<p></em>${data} Escribiendo.... </p>`;
 });
