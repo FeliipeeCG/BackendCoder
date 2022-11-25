@@ -37,8 +37,8 @@ io.on("connection", async (socket) => {
   const allMessages = await DBmsg.readMessages();
   socket.emit("chat:history", allMessages);
 
-  socket.on("chat:message", (data) => {
-    DBmsg.saveMessage(data);
+  socket.on("chat:message", async (data) => {
+    const allMessages = await DBmsg.saveMessage(data);
     io.sockets.emit("chat:history", allMessages);
   });
   socket.on("chat:typing", (data) => {

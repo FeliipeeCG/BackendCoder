@@ -1,8 +1,10 @@
-const fs = require("fs");
-class Container {
-  constructor(file) {
-    this.file = file;
+import knex from "knex";
+export default class Container {
+  constructor(config, table) {
+    this.knex = knex(config);
+    this.table = table;
   }
+
   async save(object) {
     try {
       const dataToParse = await fs.promises.readFile(this.file, "utf-8");

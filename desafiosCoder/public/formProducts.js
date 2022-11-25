@@ -7,11 +7,9 @@ const thumbnail = document.querySelector("#thumbnail");
 async function render(products) {
   const response = await fetch("./formProducts.hbs");
   const template = await response.text();
-  products.forEach((product) => {
-    const HBStemplate = Handlebars.compile(template);
-    const html = HBStemplate(product);
-    document.querySelector("#output-products").innerHTML += html;
-  });
+  const HBStemplate = Handlebars.compile(template);
+  const html = HBStemplate({ products: products });
+  document.querySelector("#output-products").innerHTML = html;
 }
 
 form.addEventListener("submit", (e) => {
@@ -30,6 +28,12 @@ form.addEventListener("submit", (e) => {
   title.focus();
 });
 
+socket.on("product:all", (products) => {
+  render(products);
+});
+
 socket.on("new-product", (data) => {
-  alert(`Ya existe el producto ${data} en el sistema`);
+  data.status === true
+    ? alert(`Ya existe el producto ${data.product.title} en el sistema`)
+    : alert(`Se ha agregado el producto ${data.product.title}`);
 });
